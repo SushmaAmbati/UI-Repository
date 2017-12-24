@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="indexstyles.css" type="text/css">
+    <script type="text/javascript" src="icecreamorder.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body onmousedown="enableSubmit();" onkeyup="enableSubmit();" onload="enableSubmit();" onmouseup="enableSubmit()">
+<form action="#" onsubmit="calculateOrder(); return false">
+    <div id="imgDiv">
+
+    </div>
+    <div id="mainDiv">
+
+        <h id="mainHeader"> Rocky mountain Ice Cream Order</h>
+        <br><br>
+        Flavor <select id="flavor" name="flavor" required
+                       oninvalid="this.setCustomValidity('Please Choose Flavor')"
+                       oninput="setCustomValidity('')">
+        <option value="" disabled selected hidden>Please Choose...</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="mintchocolatechip">MintChocolateChip</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="vanilla">Vanilla</option>
+    </select>
+
+        <fieldset id="sizeSet">
+            <legend>Size</legend>
+            <input type="radio" name="rbtn" value="small" required
+                   oninvalid="this.setCustomValidity('Please Choose Size')"
+                   oninput="setCustomValidity('')">Small<br>
+            <input type="radio" name="rbtn" value="medium" required
+                   oninvalid="this.setCustomValidity('Please Choose Size')"
+                   oninput="setCustomValidity('')">Medium<br>
+            <input type="radio" name="rbtn" value="large" required
+                   oninvalid="this.setCustomValidity('Please Choose Size')"
+                   oninput="setCustomValidity('')">Large
+        </fieldset>
+        Quantity (1-10)<input type="number" id="quantity" min="1" max="10" required
+                              oninvalid="this.setCustomValidity('Please Enter Quantity')"
+                              oninput="setCustomValidity('')">
+        <br>
+
+        <fieldset id="toppingSet">
+            <legend>Extra Topping</legend>
+            <input type="checkbox" name="toppings" value="salted">Salted Caramel<br>
+            <input type="checkbox" name="toppings" value="sugarfree">Sugar Free Strawberry<br>
+        </fieldset>
+        <br>
+        <div id="orderDiv">
+            <input type="submit" value="Order" id="submit">
+
+        </div>
+        <p id="priceResult" style="color:#0000FF"></p>
+        <p id="timeResult" style="color:#0000FF"></p>
+    </div>
+
+</form>
+</body>
+</html>

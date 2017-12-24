@@ -1,0 +1,57 @@
+#mainDiv{
+    width: 400px;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding: 32px;
+    padding-bottom: 44px;
+    padding-left: 62px;
+    float: left;
+}
+
+#mainHeader{
+    padding-left: 7px;
+    font-family: "Baskerville Old Face";
+    color: chocolate;
+}
+#flavor{
+    margin: 14px
+}
+#sizeSet{
+    font-size: small;
+    margin-right: 122px;
+}
+#quantity{
+    margin: 14px;
+}
+#toppingSet{
+
+    font-size: small;
+    margin-right: 122px;
+}
+
+#sizeHeader{
+    width:30px;
+    margin-top:-10px;
+    margin-left:5px;
+    background:white;
+    font-size: small;
+}
+#toppingHeader{
+    width:30px;
+    margin-top:-10px;
+    margin-left:5px;
+    background:white;
+    font-size: small;
+
+}
+
+#submit:hover:not(:disabled) {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#imgDiv{
+    width: 250px;
+    height: 250px;
+    float: right;
+    padding-right: 45px;
+}
